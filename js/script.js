@@ -12,7 +12,6 @@ myLibraryName.innerText = myLibrary.name;
 
 // fetch all forms elements
 const bookForm = document.getElementById("add-book-form");
-// fetch all input elements from the form
 const bookTitleInput =
   document.getElementById("book-title");
 const isbnInput = document.getElementById("book-isbn");
@@ -27,10 +26,10 @@ console.log(bookForm);
 bookForm.addEventListener("submit", addBookToLibrary);
 
 function addBookToLibrary(event) {
-  // event.preventDefault prevents the default form submission behavior
-  // which would cause a page reload
+  // event.preventDefault prevents the default form submission which will reload page
   event.preventDefault();
-  //   fetching values from the form inputs
+
+  //   fetching values from the inputs
   const bookTitle = bookTitleInput.value;
   const isbn = isbnInput.value;
   const author = authorInput.value;
@@ -38,7 +37,7 @@ function addBookToLibrary(event) {
   const quantity = parseInt(quantityInput.value, 10) || 1;
   const year = parseInt(yearInput.value, 10) || NaN;
 
-  // Create a new Book Class instance
+  // new Book Class instance
   const newBook = new Book(
     bookTitle,
     isbn,
@@ -47,7 +46,7 @@ function addBookToLibrary(event) {
     quantity,
     year
   );
-  // Add the new book to the library
+  // Add the new book to lib
   myLibrary.addBook(newBook, myLibrary);
   console.log(myLibrary);
 }

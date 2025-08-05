@@ -4,10 +4,10 @@ class Library {
   constructor(name, location, books = []) {
     this.name = name;
     this.location = location;
-    this.books = books; // Array of Book objects
+    this.books = books; // Array 
   }
 
-  // method to fetch book
+  // fetch book
   fetchBook(bookIsbn) {
     return this.books.find(
       (book) => book.isbn === bookIsbn
@@ -49,7 +49,7 @@ class Library {
         );
         borrowbtn.addEventListener("click", () => {
           book.borrowCopy();
-          this.displayBooks(myLibrary); // refresh trigger
+          this.displayBooks(myLibrary); 
         });
         returnbtn.addEventListener("click", () => {
           book.returnCopy();
@@ -63,7 +63,7 @@ class Library {
     if (book instanceof BookClass) {
       const existingBook = this.fetchBook(book.isbn);
       if (existingBook) {
-        existingBook.quantity += book.quantity; // Update quantity if book already exists
+        existingBook.quantity += book.quantity; // Update quantity if book already there 
       } else {
         this.books.push(book);
       }
