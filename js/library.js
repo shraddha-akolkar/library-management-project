@@ -25,7 +25,7 @@ class Library {
         div.classList.add("book-item");
         div.innerHTML = `
 
-        <div style="background-color:#a47148; width:500px;height:370px;    margin: 0 auto 20px auto;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;border-radius: 20px;">
+        <div style="background-color:#a47148; width:500px;height:470px;    margin: 0 auto 20px auto;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;border-radius: 20px;">
         
 
           <h3 style="text-align: center;padding-top: 30px">BOOK TITLE:${book.bookTitle}</h3><br>
