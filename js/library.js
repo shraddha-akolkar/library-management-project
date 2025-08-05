@@ -25,20 +25,20 @@ class Library {
         div.classList.add("book-item");
         div.innerHTML = `
 
-        <div style="background-color:#a47148; width:500px;height:470px;    margin: 0 auto 20px auto;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;border-radius: 20px;">
+        <div style="background-color:#a47148; width:350px;height:400px;    margin: 0 auto 20px auto;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;border-radius: 20px;">
         
 
-          <h3 style="text-align: center;padding-top: 30px">BOOK TITLE:${book.bookTitle}</h3><br>
-          <h3 style="text-align: center;padding-top: 20px">BOOK AUTHOR:${book.author}</h3><br>
-          <p style="text-align: center;padding-top: 20px">ISBN: ${book.isbn}</p><br>
-          <p style="text-align: center;padding-top: 20px">GENRE: ${book.genre}</p><br>
-          <p style="text-align: center;padding-top: 20px">QUANTITY: ${book.quantity}</p><br>
-          <p style="text-align: center;padding-top: 20px">PUBLICATION YEAR: ${book.year}</p><br>
+          <h3 style="text-align: center;color:white;padding-top: 30px">BOOK TITLE:${book.bookTitle}</h3><br>
+          <h3 style="text-align: center;color:white;padding-top: 20px">BOOK AUTHOR:${book.author}</h3><br>
+          <p style="text-align: center;color:white;padding-top: 20px">ISBN: ${book.isbn}</p><br>
+          <p style="text-align: center;color:white;padding-top: 20px">GENRE: ${book.genre}</p><br>
+          <p style="text-align: center;color:white;padding-top: 20px">QUANTITY: ${book.quantity}</p><br>
+          <p style="text-align: center;color:white;padding-top: 20px">PUBLICATION YEAR: ${book.year}</p><br>
           <p id = "error"></p>
             </div>
           <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;margin-bottom:20px;">
-          <button  style="width: 200px; height: 40px;background-color:#5e3023;color:white;border-radius: 8px;" id = borrow-${book.isbn} >BORROWED BOOKS</button>
-          <button  style="width: 200px; height: 40px;background-color:#5e3023;color:white;border-radius: 8px" id = return-${book.isbn}>RETURNED BOOKS</button>`;
+          <button  style="width: 150px; height: 40px;background-color:#5e3023;color:white;border-radius: 8px;" id = borrow-${book.isbn} >BORROWED BOOKS</button>
+          <button  style="width: 150px; height: 40px;background-color:#5e3023;color:white;border-radius: 8px" id = return-${book.isbn}>RETURNED BOOKS</button>`;
         bookCollection.appendChild(div);
 
         const borrowbtn = document.getElementById(
